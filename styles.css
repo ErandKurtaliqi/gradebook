@@ -1,0 +1,157 @@
+/* Global styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #333333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  padding: 18px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  color: #333333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"],
+button {
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #007bff, #5bc0de);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background: linear-gradient(to right, #0056b3, #3a8f9c);
+}
+
+/* Error message styles */
+p.error {
+  background-color: #dc3545;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+p.error::before {
+  content: "⚠️";
+  margin-right: 10px;
+}
+
+/* Success message styles */
+p.success {
+  background-color: #28a745;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: inline-block; /* Ensure the success message takes up only the necessary space */
+}
+
+p.success::before {
+  content: "✓"; /* Use a checkmark icon */
+  font-size: 1.2em; /* Increase the font size for the checkmark */
+  margin-right: 10px;
+}
+
+/* Link styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+button {
+  padding: 18px 40px;
+  border-radius: 12px;
+  background: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  color: #333333;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Input label styles */
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
